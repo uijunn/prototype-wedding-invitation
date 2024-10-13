@@ -852,8 +852,16 @@ video {
   gap: 2rem;
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
 .overflow-y-auto{
   overflow-y: auto;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
 }
 
 .scroll-smooth{
@@ -886,11 +894,6 @@ video {
   border-color: rgb(250 250 250 / var(--tw-border-opacity));
 }
 
-.border-goldAccent{
-  --tw-border-opacity: 1;
-  border-color: rgb(238 223 122 / var(--tw-border-opacity));
-}
-
 .border-t-greenPrimary{
   --tw-border-opacity: 1;
   border-top-color: rgb(72 95 79 / var(--tw-border-opacity));
@@ -904,11 +907,6 @@ video {
 .bg-whiteAccent{
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
-}
-
-.bg-goldAccent{
-  --tw-bg-opacity: 1;
-  background-color: rgb(238 223 122 / var(--tw-bg-opacity));
 }
 
 .bg-female-img{
@@ -1269,10 +1267,6 @@ video {
 }
 
 @media (min-width: 1024px){
-  .lg\:hidden{
-    display: none;
-  }
-
   .lg\:w-\[80\%\]{
     width: 80%;
   }

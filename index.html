@@ -7,6 +7,7 @@
   <title>Protoptype Wedding Project</title>
   <link rel="stylesheet" href="dist/output.css" />
   <link rel="stylesheet" href="dist/scrollbar.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="bg-whiteAccent">
@@ -114,7 +115,7 @@
     <nav id="navbar">
       <!-- navbar list item -->
       <div id="navbar-list-item"
-        class="fixed flex-col hidden gap-4 text-sm text-center right-4 bottom-[70px] animate-slideIn font-notoSansJP lg:text-base">
+        class="fixed flex-col hidden gap-4 text-sm text-center right-4 bottom-[70px] animate-slideIn font-notoSansJP z-50 lg:text-base">
         <a href="#home"
           class="px-4 py-2 border rounded-full lg: border-whiteAccent bg-greenPrimary text-whiteAccent hover:bg-whiteAccent hover:text-greenPrimary hover:transition hover:duration-300">HOME</a>
         <a href="#info"
@@ -133,7 +134,7 @@
       </svg>
     </nav>
     <!-- HOME -->
-    <section id="home" class="flex min-h-[100vh] items-center justify-center bg-whiteAccent py-12">
+    <section id="home" class="flex min-h-[100vh] items-center justify-center bg-whiteAccent py-12 overflow-x-hidden">
       <!-- home content -->
       <div id="home-content" class="mx-auto flex w-[80%] flex-col items-center gap-12 text-greenPrimary">
         <!-- wedding deco green #1 -->
@@ -176,7 +177,8 @@
           </g>
         </svg>
         <!-- home greeting -->
-        <div id="home-greeting" class="flex flex-col items-center justify-center gap-2 font-notoSansJP">
+        <div data-aos="fade-up" data-aos-duration="2000" id="home-greeting"
+          class="flex flex-col items-center justify-center gap-2 font-notoSansJP">
           <h1 class="text-6xl text-center font-greatVibes">
             Acara Pernikahan
           </h1>
@@ -188,7 +190,8 @@
         <!-- couple -->
         <div id="couple" class="flex flex-col items-center gap-12 md:flex-row md:items-start">
           <!-- male couple -->
-          <div class="flex flex-col items-center justify-center gap-4 md:flex-[1_0_calc(50%-48px)]">
+          <div data-aos="zoom-out-right" data-aos-duration="2000"
+            class="flex flex-col items-center justify-center gap-4 md:flex-[1_0_calc(50%-48px)]">
             <!-- photo couple -->
             <div class="w-40 h-40 bg-center bg-no-repeat bg-cover rounded-full bg-male-img"></div>
             <!-- desc couple -->
@@ -209,7 +212,8 @@
             </svg>
           </div>
           <!-- female couple -->
-          <div class="flex flex-col items-center justify-center gap-4 md:flex-[1_0_calc(50%-48px)]">
+          <div data-aos="zoom-out-left" data-aos-duration="2000"
+            class="flex flex-col items-center justify-center gap-4 md:flex-[1_0_calc(50%-48px)]">
             <!-- photo couple -->
             <div class="w-40 h-40 bg-right bg-no-repeat bg-cover rounded-full bg-female-img"></div>
             <!-- desc couple -->
@@ -306,7 +310,8 @@
           </g>
         </svg>
         <!-- countdown -->
-        <div id="countdown" class="flex flex-col items-center justify-center gap-8">
+        <div data-aos="fade-up" data-aos-duration="2000" id="countdown"
+          class="flex flex-col items-center justify-center gap-8">
           <!-- countdown title -->
           <h1 class="text-3xl text-center font-greatVibes">
             Akan melangsungkan pernikahan pada
@@ -361,7 +366,8 @@
           </svg>
         </div>
         <!-- akad and resepsi -->
-        <div id="akad-resepsi" class="flex flex-col items-center justify-center w-full gap-12 md:flex-row">
+        <div data-aos="fade-up" data-aos-duration="2000" id="akad-resepsi"
+          class="flex flex-col items-center justify-center w-full gap-12 md:flex-row">
           <!-- card akad -->
           <div id="akad-card" class="flex flex-col items-center justify-center gap-2 text-center">
             <!-- card location title -->
@@ -536,9 +542,10 @@
           </g>
         </svg>
         <!-- RSVP title -->
-        <h1 class="text-6xl text-center font-greatVibes">Kirim Pesan</h1>
+        <h1 data-aos="fade-up" data-aos-duration="2000" class="text-6xl text-center font-greatVibes">Kirim Pesan</h1>
         <!-- form -->
-        <form id="rsvp-form" action="#" class="flex w-full flex-col gap-4 lg:w-[80%]">
+        <form data-aos="fade-up" data-aos-duration="2000" id="rsvp-form" action="#"
+          class="flex w-full flex-col gap-4 lg:w-[80%]">
           <!-- invite name -->
           <div class="flex flex-col items-start w-full gap-2">
             <label for="guest-name" class="text-base font-bold font-notoSerifDisp md:text-lg">Nama</label>
@@ -591,7 +598,8 @@
           </g>
         </svg>
         <!-- guest list -->
-        <div class="relative max-h-[50vh] flex justify-center w-full lg:w-[80%]">
+        <div data-aos="fade-up" data-aos-duration="2000"
+          class="relative max-h-[50vh] flex justify-center w-full lg:w-[80%]">
           <div id="guest-list" class="flex flex-col w-full gap-4 overflow-y-auto"></div>
           <!-- arrow down -->
           <div
@@ -706,9 +714,10 @@
         <div id="gift-content"
           class="mx-auto flex w-full flex-col items-center justify-center gap-12 text-greenPrimary lg:w-[80%]">
           <!-- gift title -->
-          <h1 class="text-6xl text-center font-greatVibes">Kirim Hadiah</h1>
+          <h1 data-aos="fade-up" data-aos-duration="2000" class="text-6xl text-center font-greatVibes">Kirim Hadiah</h1>
           <!-- gift account -->
-          <div class="flex flex-col items-center justify-center w-full gap-4">
+          <div data-aos="fade-up" data-aos-duration="2000"
+            class="flex flex-col items-center justify-center w-full gap-4">
             <!-- male account -->
             <div
               class="flex flex-col items-center justify-center w-full gap-1 p-4 text-center border-2 rounded-lg border-greenPrimary bg-whiteAccent text-greenPrimary">
@@ -760,7 +769,7 @@
             </g>
           </svg>
           <!-- gift location -->
-          <div
+          <div data-aos="fade-up" data-aos-duration="2000"
             class="flex flex-col items-center justify-center w-full gap-1 p-4 text-center border-2 rounded-lg border-greenPrimary bg-whiteAccent text-greenPrimary">
             <h2 class="text-base font-bold text-center font-notoSerifDisp md:text-lg">
               Kantor Ichigo Production
@@ -846,9 +855,15 @@
   </main>
   <!-- JAVASCRIPT -->
   <script src="js/app.js"></script>
+  <!-- FIREBASE -->
   <script src="js/firebase.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-database-compat.js"></script>
+  <!-- ANIMATE ON SCROLL -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
