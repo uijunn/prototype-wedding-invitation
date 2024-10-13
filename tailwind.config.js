@@ -17,7 +17,7 @@ module.exports = {
         arima: ['Arima']
       },
       colors: {
-        greenPrimary: '#34463A',
+        greenPrimary: '#485F4F',
         whiteAccent: '#FAFAFA',
         goldAccent: '#EEDF7A'
       },
