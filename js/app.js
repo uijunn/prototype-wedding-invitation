@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // countdown
     const countdownDate = new Date('NOV 20, 2024 00:00:00').getTime(); //target date in ms
     // set interval
-    const countdownStart = setInterval(function () {
+    setInterval(function () {
         const now = new Date().getTime(); //now date in ms
         const distance = countdownDate - now; //subcription from target to now in ms
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
     invitationBtn.addEventListener('click', function () {
         if (song.paused) {
             audioPlayIcon.style.display = 'none';
-            audioPauseIcon.style.display = 'flex';
+            audioPauseIcon.style.display = 'block';
             song.play();
         }
     })
@@ -107,11 +107,11 @@ document.addEventListener('DOMContentLoaded', function () {
     audioContainer.addEventListener('click', function () {
         if (song.paused) {
             audioPlayIcon.style.display = 'none';
-            audioPauseIcon.style.display = 'flex';
+            audioPauseIcon.style.display = 'block';
             song.play();
         } else {
             audioPauseIcon.style.display = 'none';
-            audioPlayIcon.style.display = 'flex';
+            audioPlayIcon.style.display = 'block';
             song.pause();
         }
     })

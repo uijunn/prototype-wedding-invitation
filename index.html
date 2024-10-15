@@ -14,11 +14,12 @@
   <main id="main-content" class="flex flex-col">
     <!-- LANDING -->
     <section id="landing-page"
-      class="h-[100vh] font-notoSansJP text-whiteAccent before:absolute before:left-0 before:top-0 before:-z-[2] before:h-[100vh] before:w-full before:bg-landing-img before:bg-cover before:bg-center before:bg-no-repeat before:grayscale after:absolute after:top-0 after:-z-[1] after:h-[100vh] after:w-full after:bg-black after:opacity-50">
+      class="h-[100vh] font-notoSansJP text-whiteAccent before:absolute before:left-0 before:top-0 before:-z-[2] before:h-[100vh] before:w-full before:bg-landing-img before:bg-cover before:bg-center before:bg-no-repeat before:grayscale after:absolute after:top-0 after:-z-[1] after:h-[100vh] after:w-full after:bg-whiteAccent after:opacity-70">
       <!-- sambutan utama -->
-      <div id="main-greeting" class="mx-auto flex h-full w-[86%] flex-col items-center justify-center gap-8">
-        <!-- wedding deco gold #1 -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 100" class="w-full h-12 fill-goldAccent">
+      <div id="main-greeting"
+        class="mx-auto flex h-full w-[86%] text-greenPrimary flex-col items-center justify-center gap-8">
+        <!-- wedding deco green #1 -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 100" class="w-full h-12 fill-greenPrimary">
           <g id="Layer_3" data-name="Layer 3">
             <path
               d="M217.88,43.71C219,45.86,220,47.89,221,49.89s2,3.94,3.07,5.84c.5,1,1.09,1.88,1.61,2.85s1.11,1.89,1.74,2.8c1.13,1.92,2.47,3.7,3.71,5.83A17.43,17.43,0,0,1,225,63.4a23.88,23.88,0,0,1-2.45-2.68,27.41,27.41,0,0,1-2-3A24.22,24.22,0,0,1,218,50.91,17.63,17.63,0,0,1,217.88,43.71Z" />
@@ -63,16 +64,16 @@
         <p class="text-sm text-center font-arima sm:text-base">
           pada Acara Pernikahan</p>
         <!-- nama pasangan -->
-        <h1 class="text-6xl text-center font-greatVibes text-goldAccent md:text-8xl">
+        <h1 class="text-6xl text-center font-greatVibes text-greenPrimary md:text-8xl">
           Aqua & Akane
         </h1>
         <!-- cta button -->
         <a id="invite-btn" href="#home"
-          class="px-4 py-2 font-bold transition duration-300 rounded-lg font-arima bg-zinc-800 text-goldAccent hover:bg-goldAccent hover:text-zinc-800">
+          class="px-4 py-2 text-base font-bold transition duration-300 rounded-lg font-arima bg-greenPrimary text-whiteAccent hover:bg-[#28352c] md:text-lg">
           Buka Undangan
         </a>
         <!-- wedding deco green #2 -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 100" class="w-full h-12 fill-goldAccent">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 100" class="w-full h-12 fill-greenPrimary">
           <g id="Layer_3" data-name="Layer 3">
             <path
               d="M502.12,56.29C501,54.14,500,52.11,499,50.11s-2-3.94-3.07-5.84c-.5-1-1.09-1.88-1.61-2.85s-1.11-1.89-1.74-2.8c-1.13-1.92-2.47-3.7-3.71-5.83A17.43,17.43,0,0,1,495,36.6a23.88,23.88,0,0,1,2.45,2.68,27.41,27.41,0,0,1,2,3A24.22,24.22,0,0,1,502,49.09,17.63,17.63,0,0,1,502.12,56.29Z" />
@@ -119,7 +120,7 @@
         class="fixed flex-col justify-center items-center hidden gap-4 right-4 bottom-[70px] animate-slideIn z-50">
         <!-- home -->
         <a href="#home"
-          class="p-2 rounded-full bg-zinc-800 text-goldAccent hover:bg-goldAccent hover:text-zinc-800 hover:transition hover:duration-300">
+          class="p-2 border rounded-full border-greenPrimary bg-whiteAccent text-greenPrimary hover:bg-[#28352c] hover:text-whiteAccent hover:border-whiteAccent hover:transition hover:duration-300">
           <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
             <path
               d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
@@ -129,7 +130,7 @@
         </a>
         <!-- info -->
         <a href="#info"
-          class="p-2 rounded-full bg-zinc-800 text-goldAccent hover:bg-goldAccent hover:text-zinc-800 hover:transition hover:duration-300">
+          class="p-2 border rounded-full border-greenPrimary bg-whiteAccent text-greenPrimary hover:bg-[#28352c] hover:text-whiteAccent hover:border-whiteAccent hover:transition hover:duration-300">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
             <path fill-rule="evenodd"
               d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 0 1 .67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 1 1-.671-1.34l.041-.022ZM12 9a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
@@ -138,7 +139,7 @@
         </a>
         <!-- rsvp -->
         <a href="#rsvp"
-          class="p-2 rounded-full bg-zinc-800 text-goldAccent hover:bg-goldAccent hover:text-zinc-800 hover:transition hover:duration-300">
+          class="p-2 border rounded-full border-greenPrimary bg-whiteAccent text-greenPrimary hover:bg-[#28352c] hover:text-whiteAccent hover:border-whiteAccent hover:transition hover:duration-300">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
             <path fill-rule="evenodd"
               d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z"
@@ -150,7 +151,7 @@
         </a>
         <!-- gift -->
         <a href="#gift"
-          class="p-2 rounded-full bg-zinc-800 text-goldAccent hover:bg-goldAccent hover:text-zinc-800 hover:transition hover:duration-300">
+          class="p-2 border rounded-full border-greenPrimary bg-whiteAccent text-greenPrimary hover:bg-[#28352c] hover:text-whiteAccent hover:border-whiteAccent hover:transition hover:duration-300">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
             <path
               d="M9.375 3a1.875 1.875 0 0 0 0 3.75h1.875v4.5H3.375A1.875 1.875 0 0 1 1.5 9.375v-.75c0-1.036.84-1.875 1.875-1.875h3.193A3.375 3.375 0 0 1 12 2.753a3.375 3.375 0 0 1 5.432 3.997h3.943c1.035 0 1.875.84 1.875 1.875v.75c0 1.036-.84 1.875-1.875 1.875H12.75v-4.5h1.875a1.875 1.875 0 1 0-1.875-1.875V6.75h-1.5V4.875C11.25 3.839 10.41 3 9.375 3ZM11.25 12.75H3v6.75a2.25 2.25 0 0 0 2.25 2.25h6v-9ZM12.75 12.75v9h6.75a2.25 2.25 0 0 0 2.25-2.25v-6.75h-9Z" />
@@ -159,16 +160,32 @@
       </div>
       <!-- hamburger menu -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" id="hamburger-menu"
-        class="fixed z-50 items-center justify-center hidden w-10 h-10 rounded-full cursor-pointer fill-goldAccent bottom-4 right-4 bg-zinc-800">
+        class="fixed z-50 items-center justify-center hidden w-10 h-10 rounded-full cursor-pointer fill-whiteAccent bottom-4 right-4 bg-greenPrimary">
         <path fill-rule="evenodd"
           d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm0 8.625a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25ZM15.375 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0ZM7.5 10.875a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z"
           clip-rule="evenodd" />
       </svg>
     </nav>
     <!-- HOME -->
-    <section id="home" class="flex min-h-[100vh] items-center justify-center bg-whiteAccent py-12 overflow-x-hidden">
+    <section id="home"
+      class="relative flex min-h-[100vh] items-center justify-center bg-whiteAccent py-12 overflow-hidden">
+      <!-- star #3 -->
+      <svg width="342" height="342" viewBox="0 0 342 342" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="absolute blur-[170px] -right-16 -top-16">
+        <path
+          d="M148.668 14.0913C157.976 -3.97573 183.808 -3.97573 193.116 14.0913L207.124 41.2802C212.717 52.1364 225.335 57.3629 236.966 53.6413L266.096 44.3208C285.454 38.1273 303.719 56.3931 297.526 75.7502L288.205 104.881C284.484 116.512 289.71 129.13 300.566 134.723L327.755 148.731C345.822 158.039 345.822 183.871 327.755 193.179L300.566 207.186C289.71 212.779 284.484 225.397 288.205 237.029L297.526 266.159C303.719 285.516 285.454 303.782 266.096 297.589L236.966 288.268C225.335 284.546 212.717 289.773 207.124 300.629L193.116 327.818C183.808 345.885 157.976 345.885 148.668 327.818L134.66 300.629C129.067 289.773 116.449 284.546 104.818 288.268L75.6874 297.589C56.3303 303.782 38.0646 285.516 44.2581 266.159L53.5786 237.029C57.3002 225.397 52.0737 212.779 41.2174 207.186L14.0285 193.179C-4.03848 183.871 -4.03848 158.039 14.0285 148.731L41.2174 134.723C52.0737 129.13 57.3002 116.512 53.5786 104.881L44.2581 75.7502C38.0646 56.3931 56.3303 38.1273 75.6874 44.3208L104.818 53.6413C116.449 57.3629 129.067 52.1364 134.66 41.2802L148.668 14.0913Z"
+          fill="#485F4F" class="fill-goldAccent" />
+      </svg>
+      <!-- star #3 -->
+      <svg width="342" height="342" viewBox="0 0 342 342" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="absolute blur-[170px] -left-16 -bottom-16">
+        <path
+          d="M148.668 14.0913C157.976 -3.97573 183.808 -3.97573 193.116 14.0913L207.124 41.2802C212.717 52.1364 225.335 57.3629 236.966 53.6413L266.096 44.3208C285.454 38.1273 303.719 56.3931 297.526 75.7502L288.205 104.881C284.484 116.512 289.71 129.13 300.566 134.723L327.755 148.731C345.822 158.039 345.822 183.871 327.755 193.179L300.566 207.186C289.71 212.779 284.484 225.397 288.205 237.029L297.526 266.159C303.719 285.516 285.454 303.782 266.096 297.589L236.966 288.268C225.335 284.546 212.717 289.773 207.124 300.629L193.116 327.818C183.808 345.885 157.976 345.885 148.668 327.818L134.66 300.629C129.067 289.773 116.449 284.546 104.818 288.268L75.6874 297.589C56.3303 303.782 38.0646 285.516 44.2581 266.159L53.5786 237.029C57.3002 225.397 52.0737 212.779 41.2174 207.186L14.0285 193.179C-4.03848 183.871 -4.03848 158.039 14.0285 148.731L41.2174 134.723C52.0737 129.13 57.3002 116.512 53.5786 104.881L44.2581 75.7502C38.0646 56.3931 56.3303 38.1273 75.6874 44.3208L104.818 53.6413C116.449 57.3629 129.067 52.1364 134.66 41.2802L148.668 14.0913Z"
+          fill="#485F4F" class="fill-goldAccent" />
+      </svg>
       <!-- home content -->
-      <div id="home-content" class="mx-auto flex w-[80%] flex-col items-center gap-12 text-greenPrimary">
+      <div id="home-content"
+        class="z-10 flex flex-col items-center w-[80%] gap-12 mx-auto overflow-hidden text-greenPrimary">
         <!-- wedding deco green #1 -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 100" class="w-full h-12 fill-greenPrimary">
           <g id="Layer_3" data-name="Layer 3">
@@ -220,7 +237,7 @@
           </p>
         </div>
         <!-- couple -->
-        <div id="couple" class="flex flex-col items-center gap-12 md:flex-row md:items-start">
+        <div id="couple" class="relative flex flex-col items-center gap-12 md:flex-row md:items-start">
           <!-- male couple -->
           <div data-aos="fade-right" data-aos-duration="2000"
             class="flex flex-col items-center justify-center gap-4 md:flex-[1_0_calc(50%-48px)]">
@@ -236,7 +253,7 @@
           </div>
           <!-- love icon -->
           <div
-            class="animate-bounce rounded-full bg-greenPrimary p-2 md:absolute md:right-[calc(50%-20.75px)] md:top-[156%] xl:top-[152%]">
+            class="p-2 rounded-full animate-bounce bg-greenPrimary md:absolute md:left-[calc(50%-19px)] md:bottom-[calc(50%+22px)] xl:bottom-[calc(50%+25px)]">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
               class="size-6 fill-whiteAccent">
               <path
@@ -299,7 +316,7 @@
       </div>
     </section>
     <!-- INFO -->
-    <section id="info" class="flex min-h-[100vh] items-center justify-center bg-greenPrimary py-12">
+    <section id="info" class="flex min-h-[100vh] items-center justify-center bg-greenPrimary py-12 z-10">
       <!-- info content -->
       <div id="info-content" class="mx-auto flex w-[80%] flex-col items-center gap-12 text-whiteAccent">
         <!-- wedding deco white #1 -->
@@ -544,9 +561,24 @@
       </div>
     </section>
     <!-- RSVP -->
-    <section id="rsvp" class="flex min-h-[100vh] flex-col items-center justify-center gap-12 bg-whiteAccent py-12">
+    <section id="rsvp"
+      class="relative flex min-h-[100vh] flex-col items-center justify-center gap-12 bg-whiteAccent pt-12 overflow-hidden">
+      <!-- star #3 -->
+      <svg width="342" height="342" viewBox="0 0 342 342" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="absolute -left-16 -top-16 blur-[170px]">
+        <path
+          d="M148.668 14.0913C157.976 -3.97573 183.808 -3.97573 193.116 14.0913L207.124 41.2802C212.717 52.1364 225.335 57.3629 236.966 53.6413L266.096 44.3208C285.454 38.1273 303.719 56.3931 297.526 75.7502L288.205 104.881C284.484 116.512 289.71 129.13 300.566 134.723L327.755 148.731C345.822 158.039 345.822 183.871 327.755 193.179L300.566 207.186C289.71 212.779 284.484 225.397 288.205 237.029L297.526 266.159C303.719 285.516 285.454 303.782 266.096 297.589L236.966 288.268C225.335 284.546 212.717 289.773 207.124 300.629L193.116 327.818C183.808 345.885 157.976 345.885 148.668 327.818L134.66 300.629C129.067 289.773 116.449 284.546 104.818 288.268L75.6874 297.589C56.3303 303.782 38.0646 285.516 44.2581 266.159L53.5786 237.029C57.3002 225.397 52.0737 212.779 41.2174 207.186L14.0285 193.179C-4.03848 183.871 -4.03848 158.039 14.0285 148.731L41.2174 134.723C52.0737 129.13 57.3002 116.512 53.5786 104.881L44.2581 75.7502C38.0646 56.3931 56.3303 38.1273 75.6874 44.3208L104.818 53.6413C116.449 57.3629 129.067 52.1364 134.66 41.2802L148.668 14.0913Z"
+          fill="#485F4F" class="fill-goldAccent" />
+      </svg>
+      <!-- star #3 -->
+      <svg width="342" height="342" viewBox="0 0 342 342" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="absolute -right-16 -bottom-16 blur-[170px]">
+        <path
+          d="M148.668 14.0913C157.976 -3.97573 183.808 -3.97573 193.116 14.0913L207.124 41.2802C212.717 52.1364 225.335 57.3629 236.966 53.6413L266.096 44.3208C285.454 38.1273 303.719 56.3931 297.526 75.7502L288.205 104.881C284.484 116.512 289.71 129.13 300.566 134.723L327.755 148.731C345.822 158.039 345.822 183.871 327.755 193.179L300.566 207.186C289.71 212.779 284.484 225.397 288.205 237.029L297.526 266.159C303.719 285.516 285.454 303.782 266.096 297.589L236.966 288.268C225.335 284.546 212.717 289.773 207.124 300.629L193.116 327.818C183.808 345.885 157.976 345.885 148.668 327.818L134.66 300.629C129.067 289.773 116.449 284.546 104.818 288.268L75.6874 297.589C56.3303 303.782 38.0646 285.516 44.2581 266.159L53.5786 237.029C57.3002 225.397 52.0737 212.779 41.2174 207.186L14.0285 193.179C-4.03848 183.871 -4.03848 158.039 14.0285 148.731L41.2174 134.723C52.0737 129.13 57.3002 116.512 53.5786 104.881L44.2581 75.7502C38.0646 56.3931 56.3303 38.1273 75.6874 44.3208L104.818 53.6413C116.449 57.3629 129.067 52.1364 134.66 41.2802L148.668 14.0913Z"
+          fill="#485F4F" class="fill-goldAccent" />
+      </svg>
       <!-- RSVP content -->
-      <div id="rsvp-content" class="mx-auto flex w-[80%] flex-col items-center gap-12 text-greenPrimary">
+      <div id="rsvp-content" class="mx-auto flex w-[80%] flex-col items-center gap-12 text-greenPrimary z-10">
         <!-- wedding deco green #1 -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 100" class="w-full h-12 fill-greenPrimary">
           <g id="Layer_3" data-name="Layer 3">
@@ -870,15 +902,14 @@
               d="M167,27.8a6.67,6.67,0,0,0-5.22,3.58,7.74,7.74,0,0,0-.76,6.14,9,9,0,0,0,3.88,4.75A11.5,11.5,0,0,0,170.78,44a13.93,13.93,0,0,0,10.7-5.45,17.09,17.09,0,0,0,2.91-5.43,15.48,15.48,0,0,0,.63-6.06,21.17,21.17,0,0,0-4.87-11.24,25.41,25.41,0,0,0-10.08-7.25c-7.86-3.21-16.87-3.39-25.37-1.91a57.49,57.49,0,0,0-12.46,3.59,63.45,63.45,0,0,0-11.41,6.27c-7.27,4.9-13.73,11.09-20.62,16.89a127.92,127.92,0,0,1-10.72,8.33,64.58,64.58,0,0,1-12,6.53,43.16,43.16,0,0,1-13.27,3.06,31.31,31.31,0,0,1-13.32-2,32.62,32.62,0,0,0,13.21.85,42.92,42.92,0,0,0,12.61-3.77c8-3.7,14.86-9.43,21.44-15.39s13-12.34,20.53-17.67A62.3,62.3,0,0,1,144,2.71,60,60,0,0,1,157.87,2a41.7,41.7,0,0,1,13.67,3.13,29,29,0,0,1,11.33,8.53,23.7,23.7,0,0,1,5.25,13.22,18.41,18.41,0,0,1-1,7.2,18.74,18.74,0,0,1-3.65,6.2,18.22,18.22,0,0,1-5.73,4.31,14.37,14.37,0,0,1-7,1.4,13.15,13.15,0,0,1-6.7-2.39,10.14,10.14,0,0,1-4.08-5.73,8.58,8.58,0,0,1,1.31-6.76A7,7,0,0,1,167,27.8Z" />
           </g>
         </svg>
+        <!-- FOOTER -->
+        <footer class="flex items-center justify-center py-4 text-xs bg-transparent text-greenPrimary">
+          <p class="font-notoSansJP">
+            Created by
+            <a href="#landing-page" class="font-bold font-notoSerifDisp">Dart Wedding</a>
+          </p>
+        </footer>
     </section>
-    <!-- FOOTER -->
-    <footer
-      class="flex items-center justify-center py-4 text-xs border-t-greenPrimary bg-whiteAccent text-greenPrimary">
-      <p class="font-notoSansJP">
-        Created by
-        <a href="#landing-page" class="font-bold font-notoSerifDisp">Dart Wedding</a>
-      </p>
-    </footer>
     <!-- AUDIO -->
     <div class="hidden" id="audio-container">
       <audio id="song" autoplay loop>
@@ -886,14 +917,14 @@
       </audio>
       <!-- audio icon play -->
       <svg id="audio-icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-        class="fixed z-50 flex items-center justify-center w-10 h-10 rounded-full cursor-pointer bottom-4 left-4 size-6 animate-rotating bg-zinc-800 fill-goldAccent">
+        class="fixed z-50 flex items-center justify-center w-10 h-10 rounded-full cursor-pointer bottom-4 left-4 size-6 animate-rotating bg-greenPrimary fill-whiteAccent">
         <path fill-rule="evenodd"
           d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm14.024-.983a1.125 1.125 0 0 1 0 1.966l-5.603 3.113A1.125 1.125 0 0 1 9 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113Z"
           clip-rule="evenodd" />
       </svg>
       <!-- audio icon pause -->
       <svg id="audio-icon-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-        class="fixed z-50 flex items-center justify-center w-10 h-10 rounded-full cursor-pointer bottom-4 left-4 size-6 animate-rotating bg-zinc-800 fill-goldAccent">
+        class="fixed z-50 flex items-center justify-center w-10 h-10 rounded-full cursor-pointer bottom-4 left-4 size-6 animate-rotating bg-greenPrimary fill-whiteAccent">
         <path fill-rule="evenodd"
           d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12ZM9 8.25a.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75h.75a.75.75 0 0 0 .75-.75V9a.75.75 0 0 0-.75-.75H9Zm5.25 0a.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75H15a.75.75 0 0 0 .75-.75V9a.75.75 0 0 0-.75-.75h-.75Z"
           clip-rule="evenodd" />
