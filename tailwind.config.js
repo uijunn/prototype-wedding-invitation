@@ -19,7 +19,8 @@ module.exports = {
       colors: {
         greenPrimary: '#485F4F',
         whiteAccent: '#FAFAFA',
-        goldAccent: '#EEDF7A'
+        goldAccent: '#EEDF7A',
+        pinkAccent: '#ECBDC4'
       },
       animation: {
         slideIn: 'slideInTop 1s ease-in-out',
