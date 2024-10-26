@@ -19,15 +19,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // show navbar item when hamburger menu is clicked
     hamburgerToggle.addEventListener('click', function () {
-        navbarItem.classList.toggle('hidden');
-        navbarItem.classList.toggle('flex');
+        navbarItem.classList.toggle('appear');
     })
 
-    // hide hamburger menu when any navbar item is clicked
+    // hide navbar item when any navbar item is clicked
     document.querySelectorAll('#navbar-list-item').forEach(function (item) {
         item.addEventListener('click', function () {
-            navbarItem.classList.toggle('hidden');
-            navbarItem.classList.toggle('flex');
+            navbarItem.classList.toggle('appear');
         })
     })
 
@@ -80,6 +78,32 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('minutes').innerHTML = minutes;
         document.getElementById('seconds').innerHTML = seconds;
     }, 1000)
+
+    // copy VA button
+    const copyBtn1 = document.getElementById('copy-btn-1');
+    const copyBtn2 = document.getElementById('copy-btn-2');
+    const copyText1 = document.getElementById('copy-text-1');
+    const copyText2 = document.getElementById('copy-text-2');
+    const accNumber1 = document.getElementById('account-number-1').innerText;
+    const accNumber2 = document.getElementById('account-number-2').innerText;
+
+    copyBtn1.addEventListener('click', function () {
+        navigator.clipboard.writeText(accNumber1);
+        copyText1.innerText = 'Copied';
+
+        setTimeout(function () {
+            copyText1.innerText = 'Copy';
+        }, 1000)
+    })
+
+    copyBtn2.addEventListener('click', function () {
+        navigator.clipboard.writeText(accNumber2);
+        copyText2.innerText = 'Copied';
+
+        setTimeout(function () {
+            copyText2.innerText = 'Copy';
+        }, 1000)
+    })
 
     // play and pause music
     const audioContainer = document.getElementById('audio-container');

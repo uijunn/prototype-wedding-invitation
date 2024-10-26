@@ -63,11 +63,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 var data = childSnapshot.val();
                 // membuat element div guest-card
                 var guestCard = document.createElement('div');
-                guestCard.classList = 'flex flex-col gap-2 rounded-lg border-2 border-greenPrimary p-4 text-greenPrimary bg-whiteAccent';
+                guestCard.className = 'guest-card';
 
                 // membuat element p guest-card-name
                 var guestCardName = document.createElement('div');
-                guestCardName.classList = 'flex items-center gap-1 font-notoSerifDisp text-base font-bold md:text-lg';
+                guestCardName.className = 'guest-card-name';
                 // membuat data kehadiran sesuai icon
                 if (data.kehadiran === 'hadir') {
                     guestCardName.innerHTML = `<p>${data.nama}</p>` + svgCheck;
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // membuat element p guest-card-message
                 guestCardMessage = document.createElement('p');
-                guestCardMessage.classList = 'text-justify font-notoSansJP text-sm md:text-base';
+                guestCardMessage.className = 'guest-card-message';
                 guestCardMessage.innerHTML = data.komentar;
 
                 //appendchild masing-masing element ke dalam guestCard 
