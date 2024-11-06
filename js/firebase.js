@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // ---------- configure firebase ---------- //
     const firebaseConfig = {
         apiKey: "AIzaSyCwW_NE5C3x4vocYXTb0wgmEhVnmQhgSdE",
         authDomain: "prototype-wedding-invitation.firebaseapp.com",
@@ -10,12 +11,13 @@ document.addEventListener('DOMContentLoaded', function () {
         measurementId: "G-000KFZSM63"
     }
 
-    // Inisialisasi Firebase
+    // ---------- Firebase Initialize ---------- //
     firebase.initializeApp(firebaseConfig);
 
-    // Dapatkan referensi ke Realtime Database
+    // ---------- get realtime database for reference ---------- // 
     const database = firebase.database();
 
+    // ---------- add RSVP ---------- //
     function addRSVP(e) {
         e.preventDefault();
 
@@ -42,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
+    // ---------- show RSVP ---------- //
     function showRSVP() {
         // svg
         const svgCheck = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
@@ -53,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
         </svg>
         `
 
-        // mengambil data dari firebase realtime database
+        // get data from realtime database
         const guestList = document.getElementById('guest-list');
         var rsvpRef = database.ref('rsvp');
 
@@ -61,26 +64,26 @@ document.addEventListener('DOMContentLoaded', function () {
             guestList.innerHTML = '';
             snapshot.forEach(function (childSnapshot) {
                 var data = childSnapshot.val();
-                // membuat element div guest-card
+                // create div element for guest-card
                 var guestCard = document.createElement('div');
                 guestCard.className = 'guest-card';
-
-                // membuat element p guest-card-name
+                // create p element for guest-card-name
                 var guestCardName = document.createElement('div');
                 guestCardName.className = 'guest-card-name';
-                // membuat data kehadiran sesuai icon
+
+                // create attendace data with icon
                 if (data.kehadiran === 'hadir') {
                     guestCardName.innerHTML = `<p>${data.nama}</p>` + svgCheck;
                 } else if (data.kehadiran === 'tidak hadir') {
                     guestCardName.innerHTML = `<p>${data.nama}</p>` + svgCross;
                 }
 
-                // membuat element p guest-card-message
+                // create p element for guest-card-message
                 guestCardMessage = document.createElement('p');
                 guestCardMessage.className = 'guest-card-message';
                 guestCardMessage.innerHTML = data.komentar;
 
-                //appendchild masing-masing element ke dalam guestCard 
+                //insert elements to guestCard 
                 guestCard.appendChild(guestCardName);
                 guestCard.appendChild(guestCardMessage);
                 guestList.appendChild(guestCard);
@@ -88,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
+    // showing RSVP data
     document.getElementById('rsvp-form').addEventListener('submit', addRSVP);
     showRSVP();
 })
